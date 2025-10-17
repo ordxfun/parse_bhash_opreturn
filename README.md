@@ -55,7 +55,7 @@ The BHASH OP_RETURN follows this structure:
 ### Asset Types
 
 - `0x0000`: BTC (Bitcoin)
-- `0x0001`: BTC (Bitcoin Satoshi Network)
+- `0x0001`: BTC (Bitcoin - Satoshinet)
 - `0x0002`: BHASH (BHASH Protocol Asset Type)
 - `0x0003-0xFFFF`: Reserved Extensions
 

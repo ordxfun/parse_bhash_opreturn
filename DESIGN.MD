@@ -141,7 +141,7 @@ Complete OP_RETURN data structure:
 The asset type field (2 bytes) is used to identify the asset type used for betting:
 
 - **0x0000 (0)**: Bitcoin (BTC) - Default asset type
-- **0x0001 (1)**: Bitcoin-Satoshi Network (BTC-SATS) - Bitcoin's smallest unit
+- **0x0001 (1)**: Bitcoin - Satoshinet (BTC) - Bitcoin's smallest unit
 - **0x0002 (2)**: BHASH - BHASH protocol dedicated asset type
 - **0x0003-0xFFFF**: Reserved extensions - Reserved for future possible asset types (65,533 available values)
 
@@ -158,7 +158,7 @@ The asset type field (2 bytes) is used to identify the asset type used for betti
 const assetCategories = {
   // Core asset types
   0x0000: 'BTC',        // Bitcoin - Default asset type
-  0x0001: 'BTC_SATS',   // Bitcoin-Satoshi Network - Bitcoin's smallest unit
+  0x0001: 'BTC',   // Bitcoin - Satoshinet
   0x0002: 'BHASH',      // BHASH - BHASH protocol dedicated asset type
   
   // Reserved extensions (0x0003-0xFFFF: 65,533 available values)
@@ -181,12 +181,12 @@ betData := []byte{
     // ... bet counts for other characters
 }
 
-// Create Bitcoin-Satoshi Network betting data
+// Create Bitcoin - Satoshinet betting data
 betData := []byte{
     // 4-byte block height (big-endian)
     0x00, 0x00, 0x12, 0x34, // Block height 4660
     // 2-byte asset type (big-endian)
-    0x00, 0x01, // Bitcoin-Satoshi Network (0x0001)
+    0x00, 0x01, // Bitcoin - Satoshinet (0x0001)
     // 32-byte betting distribution
     0x00, 0x64, // '0': 100 bets
     // ... bet counts for other characters

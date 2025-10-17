@@ -4,7 +4,7 @@ import sys
 # Asset type definitions
 ASSET_TYPES = {
     0x0000: "BTC (Bitcoin)",
-    0x0001: "BTC (Bitcoin Satoshi Network)", 
+    0x0001: "BTC (Bitcoin - Satoshinet)", 
     0x0002: "BHASH (BHASH Protocol Asset Type)",
 }
 
