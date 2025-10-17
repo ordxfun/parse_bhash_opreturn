@@ -10,6 +10,9 @@ A Python tool for parsing BHASH protocol OP_RETURN data from Bitcoin transaction
 - Display asset type information with human-readable names
 - Support for SegWit transactions
 
+> 📄 **[Complete protocol and design documentation see DESIGN.MD](./DESIGN.MD)**
+
+
 ## Usage
 
 ### 🧪 Example Run
